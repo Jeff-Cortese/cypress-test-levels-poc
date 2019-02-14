@@ -6,8 +6,8 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "smoke": "cypress run --spec cypress/specs/smoke.spec.ts",
-    "daily": "cypress run --spec cypress/specs/daily.spec.ts",
+    "smoke": "cypress run --spec cypress/specs/**/*.smoke.spec.ts",
+    "daily": "cypress run --spec \"cypress/specs/**/*.@(smoke|daily).spec.ts\"",
     "lint": "tslint --project ."
   },
   "license": "",
