@@ -1,0 +1,30 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "smoke": "cypress run --spec cypress/specs/smoke.spec.ts",
+    "daily": "cypress run --spec cypress/specs/daily.spec.ts",
+    "lint": "tslint --project ."
+  },
+  "license": "",
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "4.0.2",
+    "aws-sdk": "2.378.0",
+    "chai-samsam": "0.0.2",
+    "chai-string": "1.5.0",
+    "chai-uuid": "1.0.6",
+    "cypress": "3.1.5",
+    "tsconfig-paths-webpack-plugin": "3.2.0",
+    "typescript": "3.2.2",
+    "url": "0.11.0"
+  },
+  "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "2.0.0",
+    "tslint": "5.12.1",
+    "tslint-no-unused-expression-chai": "0.1.4"
+  }
+}

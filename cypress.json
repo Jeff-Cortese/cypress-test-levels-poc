@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://cleointegration.xyz",
+  "integrationFolder": "cypress/specs",
+  "ignoreTestFiles": "**/*.js.map",
+  "viewportWidth": 1300,
+  "viewportHeight": 900,
+  "env": {
+  }
+}

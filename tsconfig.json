@@ -1,0 +1,24 @@
+{
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "types": ["cypress"],
+    "paths": {
+      "@cleo-e2e-libs/*": ["cypress/libs/*"],
+      "@cleo-e2e-fixtures/*": ["cypress/fixtures/*"],
+      "@cleo-e2e-pages/*": ["cypress/pages/*"]
+    }
+  }
+}
